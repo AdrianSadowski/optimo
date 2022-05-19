@@ -1,6 +1,21 @@
+@import '../../styles/settings.scss';
+
 .main {
-  border: 10px solid black;
-  margin-top: 10px;
+  border: 10px solid $main-color;
+  margin: 20px 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  a {
+    text-decoration: none;
+    color: $main-color;
+    display: block;
+    &:hover {
+      color: black;
+    }
+  }
   .info {
     .name {
       font-size: 60px;

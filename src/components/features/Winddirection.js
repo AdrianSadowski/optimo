@@ -1,37 +1,25 @@
-let WIND_DIRECTION;
-function getWindDirection(d){
-    switch (true) {
-        case 0 :
-        case (d = 360):
-            WIND_DIRECTION = "N";
-        break;
-        case 90 :
-            WIND_DIRECTION = "E";
-        break;
-        case 180 :
-            WIND_DIRECTION = "S";
-        break;
-        case 270 :
-            WIND_DIRECTION = "W";
-        break;
-        case (d>0 && d<90) :
-            WIND_DIRECTION = "NE";
-        break;
-        case (d>90 && d<180) :
-            WIND_DIRECTION = "SE";
-        break;
-        case (d>180 && d<270) :
-            WIND_DIRECTION = "SW";
-        break;
-        case (d>270 && d<360) :
-            WIND_DIRECTION = "NW";
-        break;
-        default:
-            WIND_DIRECTION = "-";
-            break;
-    }
-
-    return WIND_DIRECTION;
-} 
+function getWindDirection(d) {
+  if (d === 0) {
+    return 'N';
+  } else if (d === 360) {
+    return 'N';
+  } else if (d === 90) {
+    return 'E';
+  } else if (d === 180) {
+    return 'S';
+  } else if (d === 270) {
+    return 'W';
+  } else if (d > 0 && d < 90) {
+    return 'NE';
+  } else if (d > 90 && d < 180) {
+    return 'SE';
+  } else if (d > 180 && d < 270) {
+    return 'SW';
+  } else if (d > 270 && d < 360) {
+    return 'NW';
+  } else {
+    return '-';
+  }
+}
 
 export default getWindDirection;
