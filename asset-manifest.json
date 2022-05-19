@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AdrianSadowski/optimo/static/css/main.8e337807.css",
+    "main.js": "/AdrianSadowski/optimo/static/js/main.bf910e66.js",
+    "static/js/787.563caafb.chunk.js": "/AdrianSadowski/optimo/static/js/787.563caafb.chunk.js",
+    "index.html": "/AdrianSadowski/optimo/index.html",
+    "main.8e337807.css.map": "/AdrianSadowski/optimo/static/css/main.8e337807.css.map",
+    "main.bf910e66.js.map": "/AdrianSadowski/optimo/static/js/main.bf910e66.js.map",
+    "787.563caafb.chunk.js.map": "/AdrianSadowski/optimo/static/js/787.563caafb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e337807.css",
+    "static/js/main.bf910e66.js"
+  ]
+}
