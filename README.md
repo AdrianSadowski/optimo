@@ -1,5 +1,5 @@
 # Wersja live projektu
- [CLICK](https://adriansadowski.github.io/optimo/).
+ [Optimo Pogodynka API](https://adriansadowski.github.io/optimo/).
 
 # Aby uruchomić aplikację reactow'a
 `npm install` lub `yarn install`
