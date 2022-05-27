@@ -10,10 +10,9 @@ export const Homepage = () => {
   }
   const n = [...nums];
 
-  // setInterval(function() {
-  //   window.location.reload();
-  //   console.log('refresh')
-  // }, 60000); 
+  setInterval(function() {
+    window.location.reload();
+  }, 60000); 
 
   return (
     <div>
