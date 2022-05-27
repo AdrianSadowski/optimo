@@ -1,8 +1,13 @@
 @import '../../styles/settings.scss';
+$backgroud-color: radial-gradient(circle, rgba(27,71,120,1) 0%, rgba(168,203,242,1) 100%);
+$font-color: #ffffff;
+$details-color: #a9b5c7;
 
 .main {
-  border: 10px solid $main-color;
-  margin: 20px 100px;
+  background: $backgroud-color;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 40px;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -10,24 +15,97 @@
   flex-direction: column;
   a {
     text-decoration: none;
-    color: $main-color;
+    color: $font-color;
     display: block;
     &:hover {
-      color: black;
+      color: $font-color;
     }
   }
   .info {
-    .name {
-      font-size: 60px;
+    display: flex;
+    flex-direction: column;
+    h3{
+      font-weight: bold;
     }
-
     .temperature {
       font-size: 60px;
     }
+    .name {
+      font-size: 40px;
+    }
   }
-
   .weather__info {
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
     font-weight: bold;
+    p {
+      margin: 0;
+    }
+  }
+  .weather__info__details {
+    p {
+      margin: 0;
+      span{
+        color: $details-color;
+        text-transform: uppercase;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+@media (min-width: 577px) {
+  .main{
+    width: 90%;
+    margin: 20px auto;
+    .weather__info{
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      p{
+        padding: 0px 3px;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .main{
+    width: 80%;
+    margin: 20px auto;
+    .info{
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      text-align: center;
+      .temperature{
+        width: 40%;
+      }
+      .name{
+        font-size: 50px;
+        width: 60%;
+      }
+    }
+    .weather__info__details{
+      width: 80%;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      p{
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  .main{
+    .info{
+      .temperature{
+        text-align: right;
+      }
+    }
   }
 }
