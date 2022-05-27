@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/optimo/static/css/main.6f8480ab.css",
-    "main.js": "/optimo/static/js/main.3cc02b32.js",
+    "main.css": "/optimo/static/css/main.e0444484.css",
+    "main.js": "/optimo/static/js/main.18eace0e.js",
     "static/js/787.563caafb.chunk.js": "/optimo/static/js/787.563caafb.chunk.js",
     "index.html": "/optimo/index.html",
-    "main.6f8480ab.css.map": "/optimo/static/css/main.6f8480ab.css.map",
-    "main.3cc02b32.js.map": "/optimo/static/js/main.3cc02b32.js.map",
+    "main.e0444484.css.map": "/optimo/static/css/main.e0444484.css.map",
+    "main.18eace0e.js.map": "/optimo/static/js/main.18eace0e.js.map",
     "787.563caafb.chunk.js.map": "/optimo/static/js/787.563caafb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f8480ab.css",
-    "static/js/main.3cc02b32.js"
+    "static/css/main.e0444484.css",
+    "static/js/main.18eace0e.js"
   ]
 }
