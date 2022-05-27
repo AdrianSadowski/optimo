@@ -18,10 +18,11 @@ const Pogodynka = ({ local }) => {
     fetchData(lat, lon, setData);
     const interval = setInterval(() => {
       fetchData(lat, lon, setData);
+      console.log('Refresh data');
     }, 10000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [lat, lon, setData]);
   if (data === null) {
     return (
       <div>
@@ -29,7 +30,6 @@ const Pogodynka = ({ local }) => {
       </div>
     );
   }
-  console.log(data);
   return (
     <div className='main'>
       <a style={{ display: 'table-cell' }} href={url} target='_blank'>
@@ -39,11 +39,11 @@ const Pogodynka = ({ local }) => {
             {name}, {data.sys.country}
           </h3>
         </div>
-        <p className='weather__info'>
+        <div className='weather__info'>
           <p>Feels like {getTempInCelcius(data.main.feels_like)}</p>
           <p>{getCloudType(data.clouds.all)}</p>
           <p>{capitalize(data.weather[0].description)}.</p>
-        </p>
+        </div>
         <div className='weather__info__details'>
           <p>
             <span>Wind:</span>
